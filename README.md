@@ -5,9 +5,9 @@ Theoretically, it works on all devices since it only uses functions from Game Ma
 List of things you can do:  
 - Interaction with objects  
 - Interpret GML code:  
-  -- if, else, for, while, with, try, catch  
-  -- create simple functions and constructors  
-  -- logic of priorities and math  
+  - if, else, for, while, with, try, catch  
+  - create simple functions and constructors  
+  - logic of priorities and math  
 - Use many constants  
 - Use all functions of Game Maker Studio 2  
 
