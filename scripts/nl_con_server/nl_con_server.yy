@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"nl_con_server",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"nl_con_server",
+  "parent":{
+    "name":"network",
+    "path":"folders/Mod Loader/async/network.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

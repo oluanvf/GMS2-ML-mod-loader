@@ -1,0 +1,1 @@
+function interpret_gml_math(_code, _temp={}, _configs={}, _args=[]){return ml_language().word[? _code[ml_line()].name](_code, _temp, _configs, _args);};

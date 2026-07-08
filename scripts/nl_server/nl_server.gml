@@ -1,0 +1,1 @@
+function nl_server(_mod={}, _limit=10, _type=network_socket_tcp, _port=25555){return new nl_con_server(_limit,_type,_port, _mod)}

@@ -1,0 +1,1 @@
+function ml_next_line(_l=1){ml_set_line(ml_line()+_l); return ml_line();}

@@ -1,0 +1,1 @@
+function interpret_gml_value(_code){return _code[ml_line()].name;};

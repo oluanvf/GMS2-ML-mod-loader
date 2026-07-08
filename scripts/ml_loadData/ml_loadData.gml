@@ -1,0 +1,1 @@
+function ml_loadData(_dt){for(var i = 0; i < array_length(_dt); i++){script_execute_ext(_dt[i][0], _dt[i][1])}}

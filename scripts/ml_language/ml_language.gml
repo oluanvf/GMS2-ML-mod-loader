@@ -1,0 +1,1 @@
+function ml_language(){return global.ml_ds.language;}

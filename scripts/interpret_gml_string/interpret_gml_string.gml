@@ -1,0 +1,1 @@
+function interpret_gml_string(_code){var _tk = _code[ml_line()].name; return string_copy(_tk,2,string_length(_tk)-2);};

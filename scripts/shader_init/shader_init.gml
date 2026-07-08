@@ -1,0 +1,36 @@
+function shader_init(){	
+	global.ml_ds.shader							= {replace : {},funcs : {}, size:300,}
+	global.ml_ds.shader.replace[$ "r"]			= [0];
+	global.ml_ds.shader.replace[$ "g"]			= [1];
+	global.ml_ds.shader.replace[$ "b"]			= [2];
+	global.ml_ds.shader.replace[$ "a"]			= [3];
+	global.ml_ds.shader.replace[$ "x"]			= [0];
+	global.ml_ds.shader.replace[$ "y"]			= [1];
+	global.ml_ds.shader.replace[$ "z"]			= [2];
+	global.ml_ds.shader.replace[$ "self"]		= [-1, "v"];
+	global.ml_ds.shader.replace[$ "var"]		= [-2, "v"];
+	global.ml_ds.shader.replace[$ "in"]			= [-3, "p", "v"];
+	global.ml_ds.shader.replace[$ "-"]			= [-4, "v"];
+	global.ml_ds.shader.replace[$ "mov"]		= [-5, "p", "v"];
+	global.ml_ds.shader.replace[$ "add"]		= [-6, "p", "v"];
+	global.ml_ds.shader.replace[$ "sub"]		= [-7, "p", "v"];
+	global.ml_ds.shader.replace[$ "mul"]		= [-8, "p", "v"];
+	global.ml_ds.shader.replace[$ "div"]		= [-9, "p", "v"];
+	global.ml_ds.shader.replace[$ "and"]		= [-10, "p", "v", "v"];
+	global.ml_ds.shader.replace[$ "or"]			= [-11, "p", "v", "v"]; 
+	global.ml_ds.shader.replace[$ "xor"]		= [-12, "p", "v", "v"]; 
+	global.ml_ds.shader.replace[$ "not"]		= [-13, "p", "v"]; 
+	global.ml_ds.shader.replace[$ "cmp"]		= [-14, "p", "v", "v"];
+	global.ml_ds.shader.replace[$ "if"]			= [-15, "v"];
+	global.ml_ds.shader.replace[$ "func"]		= [-16, "v"];
+	global.ml_ds.shader.replace[$ "ret"]		= [-17, "v"];
+	global.ml_ds.shader.replace[$ "end"]		= [-18];
+	global.ml_ds.shader.replace[$ "call"]		= [-19, "p","v"];
+	global.ml_ds.shader.replace[$ "vec2"]		= [-20, "v", "v", "v"];
+	global.ml_ds.shader.replace[$ "vec3"]		= [-21, "v", "v", "v", "v"];
+	global.ml_ds.shader.replace[$ "vec4"]		= [-22, "v", "v", "v", "v", "v"];
+	global.ml_ds.shader.replace[$ "texture2d"]	= [-23, "p", "v"];					//path de descarga, vetor, 
+	global.ml_ds.shader.replace[$ "ret"]		= [-24, "v"];						//path de descarga, vetor, 
+	global.ml_ds.shader.replace[$ "!"]			= [-25, "v"];
+	global.ml_ds.shader.replace[$ "run"]		= [-26, "v"];
+}

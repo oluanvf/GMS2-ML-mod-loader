@@ -1,0 +1,1 @@
+function interpret_gml_colchetes(_code, _temp={}, _configs={}, _args=[]){return gml_get_arguments(_code[ml_line()].code, _temp, _configs, _args);};

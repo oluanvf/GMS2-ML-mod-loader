@@ -1,0 +1,1 @@
+function ml_reset_line(){ml_set_line(0); return ml_line();}

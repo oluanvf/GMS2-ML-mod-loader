@@ -1,0 +1,1 @@
+function interpret_gml_parenteses(_code, _temp={}, _configs={}, _args=[]){return ml_array_get(interpret_gml_colchetes(_code, _temp, _configs, _args), 0);};

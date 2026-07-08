@@ -1,0 +1,59 @@
+#gpu 2 size
+#gpu 1 enable
+#gpu 1 alpha
+#gpu 2 offset
+#gpu 2 pos
+#gpu 2 args
+#gpu 4 _u
+#gpu 4 outcolor
+
+func reset_args
+mov in args x 0
+mov in args y 0
+end
+
+func set_args
+mov in offset x in size x
+mov in offset y in size y
+mul in offset x in args x
+mul in offset y in args y
+end
+
+func checkA
+mov in pos x in textcoord x
+mov in pos y in textcoord y
+add in pos x in offset x
+add in pos y in offset y
+vec2 0 in pos x in pos y
+texture2d _u 0
+add alpha in _u a
+end
+
+//There are 2 tokens to execute functions: 
+//'call' and 'run'; 
+//'call' is used for functions that return a value
+//'run' is only used to execute the function.
+if enable
+mov in args x -1
+run set_args
+run checkA
+mov in args x 1
+run set_args
+run checkA
+run reset_args
+mov in args y -1
+run set_args
+run checkA
+mov in args y 1
+run set_args
+run checkA
+if ! in color a
+mov in color a alpha
+if alpha
+mov in color r in outcolor r
+mov in color g in outcolor g
+mov in color b in outcolor b
+mul in color a in outcolor a
+end
+end
+end

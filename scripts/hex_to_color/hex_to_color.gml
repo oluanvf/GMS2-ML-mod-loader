@@ -1,0 +1,1 @@
+function hex_to_color(hex_color){if(string_pos("#", hex_color) == 1 || string_pos("$", hex_color) == 1) {hex_color = string_delete(hex_color, 1, 1);}var color_value = real("0x" + hex_color);var red   = color_value >> 16 & 0xFF;var green = color_value >> 8  & 0xFF;var blue  = color_value       & 0xFF;return [red, green, blue, make_color_rgb(red, green, blue)];}

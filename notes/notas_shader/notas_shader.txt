@@ -1,0 +1,25 @@
+
+//1		blendall <value>
+//2		float <real||inr>
+//3		var <name>
+//4		in	<name> <sub name> 
+//5		mov <dest> <value>
+//6		add <dest> <value>
+//7		sub <dest> <value>
+//8		div <dest> <value>
+//9		and <dest> <value1> <value2>
+//10	or <dest> <value1> <value2>
+//11	not <dest> <value>
+//12	cmp <dest> <value1> <value2>
+//13	def <name>
+//14	end 
+//15	call <dest> <funcname>
+//16	if <value>
+//17	ret <value>
+//18	fill <dest> <number> <value>
+//19	mul <dest> <value>
+//20	vec2 <value1> <value2>
+//21	vec3 <value1> <value2> <value3>
+//22	vec4 <value1> <value2> <value3> <value4>
+//23	texture2d <dest>
+//24	!

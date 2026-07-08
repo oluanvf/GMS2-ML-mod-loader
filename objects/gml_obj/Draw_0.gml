@@ -1,0 +1,1 @@
+gml_event(ev_draw);

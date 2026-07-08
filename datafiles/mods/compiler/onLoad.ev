@@ -1,0 +1,1 @@
+run_exe=gml_add_extension([dir+"ext.dll", dir+"ext64.dll"], "execute_shell_simple_raw", ty_real, ["", "", "open", 5]);
